@@ -1,0 +1,38 @@
+{
+  "name": "envan",
+  "version": "1.0.0",
+  "bin": "./bin/envan-cli.js",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "description": "manage environment variables for AWS SSM Parameter Store",
+  "keywords": [
+    "aws",
+    "ssm",
+    "parameter store",
+    "env",
+    "dotenv",
+    "dotenv-expand"
+  ],
+  "author": "Sabbir Ahmed <sabbiirr@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesabbir/envan.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-ssm": "3.385.0",
+    "@aws-sdk/credential-providers": "3.385.0",
+    "@pnpm/find-workspace-dir": "^6.0.2",
+    "@pnpm/find-workspace-packages": "^6.0.9",
+    "@pnpm/read-package-json": "^8.0.3",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "dotenv-expand": "10.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
